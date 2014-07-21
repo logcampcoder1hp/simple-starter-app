@@ -1,0 +1,31 @@
+<!--
+  This template loads for the 'tab.signup' state (app.js)
+-->
+<view title="'Email'">
+  <content has-header="true" has-tabs="true" padding="true">
+    <img src="img/ionic.png" class="ionic-logo">
+    <div class="list list-inset">
+      <label class="item item-input">
+        <span class="input-label">First Name</span>
+        <input type="text" ng-model="user.firstname">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Last Name</span>
+        <input type="text" ng-model="user.lastname">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Username</span>
+        <input type="email" ng-model="user.username">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Email</span>
+        <input type="email" ng-model="user.email">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Password</span>
+        <input type="password" ng-model="user.password">
+      </label>
+      <button class="button button-positive button-block" ng-click="createAdopter(adopter)">Signup</button>
+    </div>
+  </content>
+</view>

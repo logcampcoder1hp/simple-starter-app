@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
+var app = angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
 
 
 .config(function($stateProvider, $urlRouterProvider) {
@@ -61,10 +61,27 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
           templateUrl: 'templates/about.html'
         }
       }
-    });
+    })
+    .state('tab.email', {
+      url: '/email',
+      views: {
+        'email-tab': {
+          templateUrl: 'templates/email.html'    
+        }      
+      },
+      controller: 'EmailController'
+    })
+    .state('tab.login', {
+      url: '/login',
+      views: {
+        'login-tab': {
+          templateUrl: 'templates/login.html'    
+        }      
+      },
+      controller: 'LoginController'
+    })
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/pets');
-
+  //$urlRouterProvider.otherwise('/tab/pets');
+  $urlRouterProvider.otherwise('/tab/email');
 });
-
