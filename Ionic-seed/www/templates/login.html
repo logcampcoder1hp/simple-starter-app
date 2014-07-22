@@ -3,54 +3,51 @@
 -->
 <view title="'Login'">
   <content has-header="true" has-tabs="true" padding="true">
-    <img src="img/ionic.png" class="ionic-logo">
+
 <div class="list card">
 
-  <div class="item item-avatar">
-    <img src="mcfly.jpg">
-    <h2>Marty McFly</h2>
-    <p>November 05, 1955</p>
-  </div>
-
   <div class="item item-body">
-    <img class="full-image" src="delorean.jpg">
+    <img src="img/ionic.png" class="ionic-logo">
     <p>
       This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
       the content is from a card-body consisting of an image and paragraph text. The footer
       consists of tabs, icons aligned left, within the card-footer.
     </p>
-    <p>
-      <a href="#" class="subdued">1 Like</a>
-      <a href="#" class="subdued">5 Comments</a>
-    </p>
   </div>
 
-  <div class="item tabs tabs-secondary tabs-icon-left">
-    <a class="tab-item" href="#">
-      <i class="icon ion-thumbsup"></i>
-      Like
-    </a>
-    <a class="tab-item" href="#">
-      <i class="icon ion-chatbox"></i>
-      Comment
-    </a>
-    <a class="tab-item" href="#">
-      <i class="icon ion-share"></i>
-      Share
-    </a>
-  </div>
+  <a href="#" class="item item-icon-left">
+    <i class="icon ion-social-twitter"></i>
+    Login with Twitter
+  </a>
+
+  <a href="#" class="item item-icon-left">
+    <i class="icon ion-social-facebook"></i>
+    Login with Facebook
+  </a>
+
+  <a href="#" class="item item-icon-left">
+    <i class="icon ion-social-googleplus"></i>
+    Login with Google
+  </a>
+
+  <a href="#" class="item item-icon-left">
+    <i class="icon ion-email"></i>
+    Login with Email / Username
+  </a>
+
+</div>
 
 </div>
       
     <div class="list list-inset">
       <button class="button button-calm button-block" 
-              ng-click="createAdopter(adopter"><i class="icon ion-social-twitter"></i> Twitter</button>
+              ng-click="createAdopter(adopter"><i class="icon ion-social-twitter"></i> Login with Twitter</button>
       <button class="button button-positive button-block" 
-              ng-click="createAdopter(adopter"><i class="icon ion-social-facebook"></i> Facebook</button>
+              ng-click="createAdopter(adopter"><i class="icon ion-social-facebook"></i> Login with Facebook</button>
       <button class="button button-assertive button-block" 
-              ng-click="createAdopter(adopter"><i class="icon ion-social-googleplus"></i> Google</button>
+              ng-click="createAdopter(adopter"><i class="icon ion-social-googleplus"></i> Login with Google</button>
       <button class="button button-dark button-block" 
-              ng-click="createAdopter(adopter"><i class="icon ion-email"></i> Email / Password </button>
+              ng-click="createAdopter(adopter"><i class="icon ion-email"></i> Login with Email / Password </button>
       <button class="button button-positive button-block" ng-click="createAdopter(adopter)">Signup</button>
     </div>
   </content>
